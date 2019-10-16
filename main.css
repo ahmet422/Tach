@@ -269,8 +269,97 @@ li{
     color:#3883ff;
 }
 /*End about*/
+/*Start divinators*/
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.wrapper h2{
+    text-align: left;
+}
+ 
+.line{
+    height: 25px;
+    min-width: 100%;
+    margin: 0 auto 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+   
+}
+
+.line:before{
+    content: " ";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    top: 0;
+    z-index: -2;
+    background: #f1e863;
+}
+.line::after{
+    content: " ";
+    background: rgb(240, 79, 191);
+    height: 25px;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    animation: animate 3s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 25%;
+}
+
+.line1::after{
+    max-width: 90%;
+    
+}
+.line2::after{
+    max-width: 60%;
+}
+
+.line3::after{
+    max-width: 90%;
+}
+.line4::after{
+    max-width: 75%;
+}
+
+.line5::after{
+    max-width: 85%;
+}
+
+.line6::after{
+    max-width: 25%;
+}
+
+@keyframes animate{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/*End divinators*/
 
 /*Start services*/
+.text1{
+    text-align: left;
+}
 
 .my-skills{
     margin-top: 10rem;
@@ -291,6 +380,8 @@ li{
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
+    text-decoration: underline;
+
 
 }
 
@@ -310,6 +401,8 @@ li{
     margin: auto;
     transform: rotate(-45deg);
 }
+
+
 
 /*End services*/
  
@@ -355,6 +448,14 @@ li{
 
 .portfolio-description .cta:hover{
     color:#2f67cd;
+}
+
+.cta{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -25px;
 }
 /*End services*/
 

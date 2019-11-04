@@ -196,14 +196,14 @@ li{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 100%;
+    width: 80%;
     text-align: center;
     z-index: 1; 
     
 }
 
 .landing-text h1{
-    font-size: 20rem;
+    font-size: 16rem;
     font-family:'Roboto', sans-serif;
     background: linear-gradient(to top, #2c54bb, #59e6eb);
     background-clip: text;

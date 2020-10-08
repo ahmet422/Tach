@@ -340,15 +340,15 @@ li{
     max-width: 90%;
 }
 .line4::after{
-    max-width: 75%;
+    max-width: 95%;
 }
 
 .line5::after{
-    max-width: 85%;
+    max-width: 95%;
 }
 
 .line6::after{
-    max-width: 25%;
+    max-width: 85%;
 }
 
 @keyframes animate{
